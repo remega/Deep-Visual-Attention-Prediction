@@ -9,6 +9,10 @@ By Wenguan Wang, Jianbing Shen
 Our current implementation is based on the caffe version of Holistically-Nested Edge Detection (has been included in this repository, see `external/caffe`). We also use some functions from fasterrcnn's caffe.
 But it can be easily implemented in standard caffe library. 
 
+
+### Re 
+As some apis of faster-rcnn-caffe are used, we should compile the provided caffe. That caffe is supposed to use cudnn4.0, so don't use cudnn when compiling, if your cudnn is more current. I also add USE_OPENCV := 0 in makeconfig
+
 We plan to re-implement it on Keras, but it depends on my schedule.
 
 a. Please first compile the 'Caffe' for matlab.
