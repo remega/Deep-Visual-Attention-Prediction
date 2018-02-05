@@ -45,7 +45,7 @@ end
 
 
 只能用自带caffe 因为cropping层被修改过，上述方法跑通结果依旧有bug（位置偏移）。 自带fasterrcnn-caffe版本太老，cudnn5不兼容，且必须编译opencv3以上。
-另注意在matlab运行caffe时确保环境变量正确（make mattest可能会报错也是这个原因）
+另注意在matlab运行caffe时确保环境变量正确（make mattest可能会报错也是这个原因） 路径为编译caffe时各个lib的路径，包括anaconda，anaconda/env (有libopencv)，cuda等
 
 We plan to re-implement it on Keras, but it depends on my schedule.
 
