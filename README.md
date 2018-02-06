@@ -6,8 +6,10 @@ By Wenguan Wang, Jianbing Shen
 
 ========================================================================
 
-Our current implementation is based on the caffe version of Holistically-Nested Edge Detection (has been included in this repository, see `external/caffe`). We also use some functions from fasterrcnn's caffe.
-But it can be easily implemented in standard caffe library.
+Our current implementation is based on the caffe version of Holistically-Nested Edge Detection (has been included in this repository, see `external/caffe`). We also use some functions from fasterrcnn's caffe.  
+But it can be easily implemented in standard caffe library. 
+
+Since the provided caffe is an old one, it can't be compiled when cudnn>=5.0 and opencv<3.0. So you are supposed to comment USE_CUDNN := 1 when compiling caffe and make sure your opencv works.
 
 We plan to re-implement it on Keras, but it depends on my schedule.
 
